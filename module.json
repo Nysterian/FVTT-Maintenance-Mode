@@ -1,0 +1,19 @@
+{
+  "name": "MaintenanceMode",
+  "title": "Maintenance Mode",
+  "description": "Adds a button to toggle \"Maintenance Mode\", which stops players from being able to connect while the GM is planning the next game.",
+  "author": "Nyss",
+  "version": "0.0.2",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+
+  "esmodules": [
+    "./scripts/init.js"
+  ],
+
+  "url": "https://github.com/Nysterian/FVTT-Maintenance-Mode",
+  "manifest": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/download/Stable/module.json",
+  "download": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/download/Stable/module.zip",
+  "readme": "README.md",
+  "bugs": "https://github.com/Nysterian/FVTT-Maintenance-Mode/issues"
+}
