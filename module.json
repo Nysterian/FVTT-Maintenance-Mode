@@ -12,8 +12,8 @@
   ],
 
   "url": "https://github.com/Nysterian/FVTT-Maintenance-Mode",
-  "manifest": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/download/Stable/module.json",
-  "download": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/download/Stable/module.zip",
+  "manifest": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/latest/download/module.json",
+  "download": "https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/download/0.0.0/module.zip",
   "readme": "README.md",
   "bugs": "https://github.com/Nysterian/FVTT-Maintenance-Mode/issues"
 }

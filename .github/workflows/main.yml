@@ -30,4 +30,4 @@ jobs:
       preselease: false
       token: ${{secrets.GITHUB_TOKEN}}
       artifacts: './module.zip, ./module.json'
-      tag: Stable
+      tag: ${{ steps.get-version.outputs.version }}
