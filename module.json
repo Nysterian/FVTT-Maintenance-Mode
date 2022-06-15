@@ -1,6 +1,6 @@
 {
-  "name": "MaintenanceMode-Alpha",
-  "title": "Maintenance Mode Alpha",
+  "name": "MaintenanceMode",
+  "title": "Maintenance Mode",
   "description": "Adds a button to toggle \"Maintenance Mode\", which stops players from being able to connect while the GM is planning the next game.",
   "author": "Nyss",
   "version": "0.0.2",
@@ -8,7 +8,17 @@
   "compatibleCoreVersion": "9",
 
   "esmodules": [
-    "./scripts/init.js"
+    "scripts/init.js"
+  ],
+  "styles": [
+    "styles/maintenance-mode.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
   ],
 
   "url": "https://github.com/Nysterian/FVTT-Maintenance-Mode",
