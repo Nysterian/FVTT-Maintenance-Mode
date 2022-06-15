@@ -1,2 +1,8 @@
 let fs = require('fs');
-console.log(JSON.parse(fs.readFileSync('./module.json', 'utf8')).version);
+
+let moduleJSON = JSON.parse(fs.readFileSync('./module.json', 'utf8'))
+moduleJSON.name = "MaintenanceMode"
+moduleJSON.title = "Maintenance Mode"
+fs.writeFileSync('./module.json', moduleJSON, 'utf8')
+
+console.log(moduleJSON.version);

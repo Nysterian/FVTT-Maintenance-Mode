@@ -1,6 +1,6 @@
 {
-  "name": "MaintenanceMode",
-  "title": "Maintenance Mode",
+  "name": "MaintenanceMode-Alpha",
+  "title": "Maintenance Mode Alpha",
   "description": "Adds a button to toggle \"Maintenance Mode\", which stops players from being able to connect while the GM is planning the next game.",
   "author": "Nyss",
   "version": "0.0.2",
