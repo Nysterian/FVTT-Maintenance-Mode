@@ -5,6 +5,9 @@ Adds a button to the player list that stops players from connecting while the GM
 :----:|:----:
 Maintenance Off / Players can connect | Maintenance On / Players cannot connect
 
+### Extra Options
+* List players that should never get locked out during maintenance mode. `TODO`
+
 ## Installation
 * In your Foundry Configuration and Setup screen, select `Add-on Modules`
 * On the lower left corner, click `Install Module`
@@ -12,3 +15,7 @@ Maintenance Off / Players can connect | Maintenance On / Players cannot connect
 * Paste `https://github.com/Nysterian/FVTT-Maintenance-Mode/releases/latest/download/module.json` into the text box, then press `Install`
 * Open your game, go to your `Game Settings` tab, select `Manage Modules` and enable the `Maintenance Mode` module
 * The game will refresh, and the new button will appear next to your player list. Simply press it to toggle it on or off
+
+## How does it work?
+Since modules cannot interact with the program outside of the game, this module achieves this by banning all the players created within that game.
+It first saves each player's role, then bans all of them except GMs, then when maintenance mode is over, it restores everyone's role, allowing them to connect again.
