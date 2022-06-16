@@ -1,0 +1,28 @@
+.maint-mode-icon-button {
+    background: transparent;
+    padding: 0;
+    color: white;
+    line-height: normal;
+    border: 0;
+    align-self: center;
+    width: 20px;
+    float: right;
+    margin: 7px;
+}
+
+.maint-mode-icon-button > i {
+    margin: 0 !important;
+}
+
+.maint-mode-icon-button > .fa-dice {
+    color: green;
+}
+
+.maint-mode-icon-button > .fa-hammer {
+    color: red;
+}
+
+.maint-mode-icon-button:hover, .maint-mode-icon-button:focus {
+    box-shadow: none;
+    text-shadow: 0 0 5px blue;
+}
