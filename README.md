@@ -19,3 +19,5 @@ Maintenance Off / Players can connect | Maintenance On / Players cannot connect
 ## How does it work?
 Since modules cannot interact with the program outside of the game, this module achieves this by banning all the players created within that game.
 It first saves each player's role, then bans all of them except GMs, then when maintenance mode is over, it restores everyone's role, allowing them to connect again.
+
+With that said, it is possible to re-allow a single player in your game while maintenance mode is on by right clicking their name on the player list and un-banning them. I thought about stopping that feature during maintenance mode, but I thought the flexibility of temporarily allowing someone to connect might be handy in certain occasions, so I left it in.
