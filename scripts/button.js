@@ -31,7 +31,8 @@ Hooks.on('renderPlayerList', (playerList, [html]) => {
             game.users.forEach(user => {
 
                 if (!user.isGM) {
-                    user.update({ role: prevUsers.find(a => a._id == user.id).role })
+                    let thisUser = game.users.get(user.id)
+                    //TODO thisUser.updateSource({ role: prevUsers.find(a => a._id == user.id).role })
                 }
 
             });
@@ -45,12 +46,15 @@ Hooks.on('renderPlayerList', (playerList, [html]) => {
             game.users.forEach(user => {
 
                 if (!user.isGM) {
-                    user.update({ role: 0 })
+                    let thisUser = game.users.get(user.id)
+                    //TODO thisUser.updateSource({ role: 0 })
                 }
 
             });
 
         }
+
+        //game.initializeUI()
     });
 
     if (game.user.isGM) html.prepend(newBtn);
