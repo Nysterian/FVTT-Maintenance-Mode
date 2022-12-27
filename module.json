@@ -1,11 +1,18 @@
 {
-  "name": "MaintenanceMode",
+  "id": "MaintenanceMode",
   "title": "Maintenance Mode",
   "description": "Adds a button to toggle \"Maintenance Mode\", which stops players from being able to connect while the GM is planning the next game.",
-  "authors": [ "Nyss" ],
-  "version": "0.1.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "authors": [
+    {
+      "name": "Nyss",
+      "discord": "Nyss#4805"
+    }
+  ],
+  "version": "0.1.1",
+  "compatibility": {
+    "minimum": 9,
+    "verified": "9.120"
+  },
 
   "scripts": [
     "scripts/maintenance-mode.js",
