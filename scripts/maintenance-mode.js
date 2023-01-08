@@ -46,8 +46,8 @@ Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
  * Create settings to save current mode and previous banned players
  */
 Hooks.on('init', () => {
-    game.settings.register(maintMode.ID, 'maintMode', {
-        name: 'Maintenance Mode',
+    game.settings.register(maintMode.ID, 'state', {
+        name: 'Maintenance Mode State',
         hint: 'Toggles whether maintenance mode is currently on or off.',
         scope: 'world',
         config: false,
