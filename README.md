@@ -1,3 +1,7 @@
+## Notice:
+This module currently has a bug where it doesn't display which players are banned properly, and errors are logged in the console.
+This is a bug with Foundry, but the module *should* still work properly. Will have to wait for Foundry devs to fix the bug to update this properly.
+
 # MaintenanceMode
 Adds a button to the player list that stops players from connecting while the GM is planning their game.
 
