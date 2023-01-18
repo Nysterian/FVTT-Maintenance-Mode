@@ -1,0 +1,28 @@
+<form>
+    <p class="maint-mode-settings-table"> This is a test </p>
+    <hr />
+    <table class="maint-mode-settings-table">
+
+        <!-- Header -->
+        <thead>
+            <tr>
+                <td>Player</td>
+                <td>Ignored</td>
+            </tr>
+        </thead>
+
+        <!-- Body -->
+        <tbody>
+            {{#each users}}
+
+            <tr>
+                <td>{{this.name}}</td>
+                <td> <input name="{{@key}}" type="checkbox" {{#if this.ignore}}checked{{/if}}/> </td>
+            </tr>
+
+            {{/each}}
+        </tbody>
+
+    </table>
+    <hr />
+</form>

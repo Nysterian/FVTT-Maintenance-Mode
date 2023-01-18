@@ -10,7 +10,7 @@ class maintMode {
     };
 
     static TEMPLATES = {
-        MAINT: `modules/${this.ID}/templates/todo-list.hbs`
+        IGNORE: `modules/${this.ID}/templates/ignoreList.html`
     };
 
     /**
@@ -31,7 +31,7 @@ class maintMode {
 /**
  * Logs the module initialising
  */
-console.log(`%c${maintMode.NAME}` + '%c |', 'color: #dd0000;', 'color: #ff6600;', 'Initialised');
+maintMode.log(true, 'Initialised!')
 
 /**
  * Register our module's debug flag with developer mode's custom hook
@@ -61,5 +61,20 @@ Hooks.on('init', () => {
         config: false,
         type: String,
         default: '[]'
+    });
+
+    game.settings.registerMenu(maintMode.ID, "ignoreListMenu", {
+        label: "Ignore List",
+        icon: "fas fa-bars",
+        type: ignoreListAppClass,
+        restricted: true
+    });
+    game.settings.register(maintMode.ID, 'ignoreList', {
+        name: 'Ignore List',
+        hint: 'List of players that can still connect during maintenance mode',
+        scope: 'world',
+        config: false,
+        type: Object,
+        default: {}
     });
 })
