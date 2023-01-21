@@ -6,8 +6,8 @@ class ignoreListAppClass extends FormApplication {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             title: "Ignore List",
-            height: 500,
-            width: 450,
+            height: 400,
+            width: 300,
             template: maintMode.TEMPLATES.IGNORE,
             closeOnSubmit: false,
             submitOnClose: true,
